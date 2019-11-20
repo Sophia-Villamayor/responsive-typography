@@ -19,6 +19,7 @@ html {
 }
 
 body {
+  margin: 0;
   line-height: 1.3;
   font-family: "Crimson Text", serif;
   margin-left: 1rem;
@@ -30,7 +31,7 @@ article {
 
 article h1 {
   font-weight: normal;
-  padding-top: .8rem;
+  padding-top: 1.3rem;
   margin: 0;
 }
 
@@ -39,11 +40,12 @@ article header {
 }
 
 article header p {
-  margin: 0 0 1.4rem 0;
+  margin-top: 0;
+  margin-bottom: 1.3rem;
   font-style: italic;
 }
 
-ol {
+article ol {
   margin-left: 1rem;
   padding: 0;
 }
@@ -53,35 +55,40 @@ article p {
 }
 
 article > p:last-child {
+  margin-top: .1rem;
   padding-top: 1rem;
   padding-bottom: 1.3rem;
   border-bottom: 1px solid #999;
 }
 
 blockquote {
-  max-width: 24em;
+  margin: 0;
+  max-width: 90em;
   color: #555;
   font-size: 1.125rem;
+  padding-top: .7rem;
 }
 
 span {
-  margin-left: 5rem;
+  margin-left: 0;
 }
 
 .quote {
   margin-left: 0;
+  text-align: left;
   color: #999;
 }
 
 @media only screen and (min-width: 38em) {
-
   html {
     font-size: 110%;
     line-height: 1.4;
+
+  }
+
 }
 
 @media only screen and (min-width: 60em) {
-
   html {
     font-size: 120%;
     line-height: 1.5;
@@ -95,9 +102,9 @@ span {
 }
 
 @media only screen and (min-width: 90em) {
-
   html {
     font-size: 130%;
+
   }
 
 }
